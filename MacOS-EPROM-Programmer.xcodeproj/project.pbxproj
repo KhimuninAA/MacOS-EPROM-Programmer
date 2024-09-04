@@ -10,6 +10,14 @@
 		BFC8A1E42C88388200EAC440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8A1E32C88388200EAC440 /* AppDelegate.swift */; };
 		BFC8A1E62C88388400EAC440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC8A1E52C88388400EAC440 /* Assets.xcassets */; };
 		BFC8A1E92C88388400EAC440 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BFC8A1E82C88388400EAC440 /* Base */; };
+		BFC8A1F22C88390C00EAC440 /* ORSSerial in Frameworks */ = {isa = PBXBuildFile; productRef = BFC8A1F12C88390C00EAC440 /* ORSSerial */; };
+		BFC8A1F52C8839A700EAC440 /* CoreCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8A1F42C8839A700EAC440 /* CoreCommand.swift */; };
+		BFC8A1F82C88492700EAC440 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8A1F72C88492700EAC440 /* Storage.swift */; };
+		BFC8A1FB2C884A8600EAC440 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8A1FA2C884A8600EAC440 /* RootView.swift */; };
+		BFC8A1FD2C8850E000EAC440 /* ConnectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8A1FC2C8850E000EAC440 /* ConnectBox.swift */; };
+		BFC8A2022C8851D300EAC440 /* KhTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8A1FF2C8851D200EAC440 /* KhTextField.swift */; };
+		BFC8A2032C8851D300EAC440 /* KhHexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8A2002C8851D200EAC440 /* KhHexView.swift */; };
+		BFC8A2042C8851D300EAC440 /* KhLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8A2012C8851D300EAC440 /* KhLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +26,13 @@
 		BFC8A1E52C88388400EAC440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC8A1E82C88388400EAC440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BFC8A1EA2C88388400EAC440 /* MacOS_EPROM_Programmer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_EPROM_Programmer.entitlements; sourceTree = "<group>"; };
+		BFC8A1F42C8839A700EAC440 /* CoreCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreCommand.swift; sourceTree = "<group>"; };
+		BFC8A1F72C88492700EAC440 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		BFC8A1FA2C884A8600EAC440 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		BFC8A1FC2C8850E000EAC440 /* ConnectBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectBox.swift; sourceTree = "<group>"; };
+		BFC8A1FF2C8851D200EAC440 /* KhTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhTextField.swift; sourceTree = "<group>"; };
+		BFC8A2002C8851D200EAC440 /* KhHexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhHexView.swift; sourceTree = "<group>"; };
+		BFC8A2012C8851D300EAC440 /* KhLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC8A1F22C88390C00EAC440 /* ORSSerial in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +66,51 @@
 		BFC8A1E22C88388200EAC440 /* MacOS-EPROM-Programmer */ = {
 			isa = PBXGroup;
 			children = (
+				BFC8A1FE2C8851B900EAC440 /* MyClasses */,
+				BFC8A1F92C884A5500EAC440 /* View's */,
+				BFC8A1F62C88491800EAC440 /* Storage */,
+				BFC8A1F32C88399C00EAC440 /* Command */,
 				BFC8A1E32C88388200EAC440 /* AppDelegate.swift */,
 				BFC8A1E52C88388400EAC440 /* Assets.xcassets */,
 				BFC8A1E72C88388400EAC440 /* MainMenu.xib */,
 				BFC8A1EA2C88388400EAC440 /* MacOS_EPROM_Programmer.entitlements */,
 			);
 			path = "MacOS-EPROM-Programmer";
+			sourceTree = "<group>";
+		};
+		BFC8A1F32C88399C00EAC440 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BFC8A1F42C8839A700EAC440 /* CoreCommand.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		BFC8A1F62C88491800EAC440 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BFC8A1F72C88492700EAC440 /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		BFC8A1F92C884A5500EAC440 /* View's */ = {
+			isa = PBXGroup;
+			children = (
+				BFC8A1FA2C884A8600EAC440 /* RootView.swift */,
+				BFC8A1FC2C8850E000EAC440 /* ConnectBox.swift */,
+			);
+			path = "View's";
+			sourceTree = "<group>";
+		};
+		BFC8A1FE2C8851B900EAC440 /* MyClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BFC8A2002C8851D200EAC440 /* KhHexView.swift */,
+				BFC8A2012C8851D300EAC440 /* KhLabel.swift */,
+				BFC8A1FF2C8851D200EAC440 /* KhTextField.swift */,
+			);
+			path = MyClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +129,9 @@
 			dependencies = (
 			);
 			name = "MacOS-EPROM-Programmer";
+			packageProductDependencies = (
+				BFC8A1F12C88390C00EAC440 /* ORSSerial */,
+			);
 			productName = "MacOS-EPROM-Programmer";
 			productReference = BFC8A1E02C88388200EAC440 /* MacOS-EPROM-Programmer.app */;
 			productType = "com.apple.product-type.application";
@@ -102,6 +160,9 @@
 				Base,
 			);
 			mainGroup = BFC8A1D72C88388200EAC440;
+			packageReferences = (
+				BFC8A1F02C88390B00EAC440 /* XCRemoteSwiftPackageReference "ORSSerialPort" */,
+			);
 			productRefGroup = BFC8A1E12C88388200EAC440 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,7 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC8A1FB2C884A8600EAC440 /* RootView.swift in Sources */,
+				BFC8A2032C8851D300EAC440 /* KhHexView.swift in Sources */,
+				BFC8A1F52C8839A700EAC440 /* CoreCommand.swift in Sources */,
+				BFC8A2042C8851D300EAC440 /* KhLabel.swift in Sources */,
 				BFC8A1E42C88388200EAC440 /* AppDelegate.swift in Sources */,
+				BFC8A1FD2C8850E000EAC440 /* ConnectBox.swift in Sources */,
+				BFC8A2022C8851D300EAC440 /* KhTextField.swift in Sources */,
+				BFC8A1F82C88492700EAC440 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +349,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.khimunin.MacOS-EPROM-Programmer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +375,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.khimunin.MacOS-EPROM-Programmer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFC8A1F02C88390B00EAC440 /* XCRemoteSwiftPackageReference "ORSSerialPort" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/armadsen/ORSSerialPort";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFC8A1F12C88390C00EAC440 /* ORSSerial */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFC8A1F02C88390B00EAC440 /* XCRemoteSwiftPackageReference "ORSSerialPort" */;
+			productName = ORSSerial;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFC8A1D82C88388200EAC440 /* Project object */;
 }
