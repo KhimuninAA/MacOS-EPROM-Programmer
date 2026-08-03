@@ -188,6 +188,35 @@ class RootView: NSView{
             }
             break
         case .Verify:
+            //    case rounded = 1
+            //    case regularSquare = 2
+            //    case disclosure = 5
+            //    case shadowlessSquare = 6
+            //    case circular = 7
+            //    case texturedSquare = 8
+            //    case helpButton = 9
+            //    case smallSquare = 10
+            //    case texturedRounded = 11
+            //    case roundRect = 12
+            //    case recessed = 13
+            //    case roundedDisclosure = 14
+            //    @available(macOS 10.7, *)
+            //    case inline = 15
+            let listType: [NSButton.BezelStyle] = [.rounded,.regularSquare,.disclosure,.shadowlessSquare,.circular,.texturedSquare,.helpButton,.smallSquare,.texturedRounded,.roundRect,.recessed,.roundedDisclosure,.inline]
+            let curType = self.connectBox.deviceUpdateButton.bezelStyle
+            var index: Int = 0
+            var findIndex: Int = 0
+            for item in listType {
+                if item == curType {
+                    findIndex = index
+                }
+                index += 1
+            }
+            findIndex += 1
+            if findIndex >= 13 {
+                findIndex = 0
+            }
+            self.connectBox.deviceUpdateButton.bezelStyle = listType[findIndex]
             break
         }
     }

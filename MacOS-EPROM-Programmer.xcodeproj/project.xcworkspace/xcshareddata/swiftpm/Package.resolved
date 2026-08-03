@@ -1,5 +1,4 @@
 {
-  "originHash" : "5bd05eb11d34c4b74ce3ffe734bf3ea659bfa484127efb275ec92f25e011ecad",
   "pins" : [
     {
       "identity" : "orsserialport",
@@ -11,5 +10,5 @@
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

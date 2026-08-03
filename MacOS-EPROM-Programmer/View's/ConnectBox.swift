@@ -51,7 +51,25 @@ class ConnectBox: NSBox {
         devicePopUpButton = NSPopUpButton(frame: .zero)
         contentView?.addSubview(devicePopUpButton)
         
+        
+//    case rounded = 1
+//    case regularSquare = 2
+//    case disclosure = 5
+//    case shadowlessSquare = 6
+//    case circular = 7
+//    case texturedSquare = 8
+//    case helpButton = 9
+//    case smallSquare = 10
+//    case texturedRounded = 11
+//    case roundRect = 12
+//    case recessed = 13
+//    case roundedDisclosure = 14
+//    @available(macOS 10.7, *)
+//    case inline = 15
+        
         deviceUpdateButton = NSButton(frame: .zero)
+        deviceUpdateButton.bezelStyle = .roundRect //.rounded
+        deviceUpdateButton.setButtonType(.momentaryPushIn)
         deviceUpdateButton.title = "device update"
         deviceUpdateButton.target = self
         deviceUpdateButton.action = #selector(updateButtonClick)
